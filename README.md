@@ -8,7 +8,28 @@ You will practice how to:
 - Find HTML elements using CSS selectors
 - Store jQuery objects in variables
 
-## Find an Element by Type
+## Getting Started
+
+```no-highlight
+# Clone down this repo
+git clone git@github.com:LaunchAcademy/launchbook.git
+
+# Move into repo directory
+cd launchbook
+
+# Install gems app depends on
+bundle install
+
+# Start the app server
+ruby app.rb
+
+# Open the app in your browser
+open 'http://localhost:4567'
+```
+
+## Finding Stuff
+
+### Find an Element by Type
 
 jQuery let's us use [CSS selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048),
 to find elements that are in the DOM (on the page). The most basic way to find
@@ -22,7 +43,7 @@ $('form');
 
 **Find the top navbar by query for the element type, which is  `<nav>`.**
 
-## Finding Elements by their ID
+### Finding Elements by their ID
 
 We can also find an element by it's **id**.
 
@@ -34,7 +55,7 @@ $('#sidebar-left');
 
 **Find the sidebar on the right by using it's id.**
 
-## Finding Elements by their Class
+### Finding Elements by their Class
 
 We can also find elements by their **class**.
 
@@ -46,7 +67,7 @@ $('.favorites');
 
 **Find the "Pages" and "Groups" sections of the sidebar by using their class.**
 
-## Finding Child Elements
+### Finding Child Elements
 
 Since jQuery uses CSS selectors to find elements, we can also scope our queries
 the same way you would with CSS.
@@ -61,9 +82,9 @@ $('#sidebar div');
 $('#sidebar > div');
 ```
 
-## Querying Multiple Elements
+### Querying Multiple Elements
 
-### Finding All Matching Elements
+#### Finding All Matching Elements
 
 Example, we can find all of the posts on the page by using the `.post` class:
 
@@ -73,7 +94,7 @@ $('.post');
 
 **Find all of the comments on the page.**
 
-### Finding Specific Matching Elements
+#### Finding Specific Matching Elements
 
 Example, finding the first post in the feed:
 
@@ -107,9 +128,9 @@ won't be able to use any of jQuery's functions on this object. In order to use
 this technique and return a jQuery object, you would need to wrap the entire
 query with jQuery: `$($('.post')[2]);`.
 
-## Simple Hiding/Showing Elements
+### Simple Hiding/Showing Elements
 
-### Hiding an Element
+#### Hiding an Element
 
 jQuery's [.hide()](https://api.jquery.com/hide/) can be used to easily hide an
 element.
@@ -122,7 +143,7 @@ $('.status-update').hide();
 
 **Find one of the ads in the sidebar and use `.hide()` to hide it.**
 
-### Showing an Element
+#### Showing an Element
 
 jQuery's [.show()](http://api.jquery.com/show/) can be used to easily show an
 element that is currently hidden.
@@ -136,7 +157,7 @@ $('.status-update').show();
 **Use `.show()` to make the ad that you hid in the previous step visible
 again.**
 
-### Toggling an Element
+#### Toggling an Element
 
 jQuery's [.toggle()](https://api.jquery.com/toggle/) can be used to easily show
 an element that is currently hidden.
@@ -149,11 +170,7 @@ $('.status-update').toggle();
 
 **Use `.toggle()` to toggle the display of the nav bar at the top of the page.**
 
-## Modifying Elements
-
 ### Modifying an Element's Attributes
-
-#### Changing the Status Form's Placeholder
 
 We can use jQuery's [.attr()](https://api.jquery.com/attr/) function to modify
 the value of an element's attribute.
@@ -182,7 +199,7 @@ $('.title-area .name a').text('Launch Academy Facebook Clone');
 
 **Find Sam's post and change it's text to something incredible.**
 
-## Modifying an Element's Class
+### Modifying an Element's Class
 
 jQuery provides some easy ways of modifying an element's class. Some of the most
 used are [.addClass()](http://api.jquery.com/addclass/), [.removeClass()](https://api.jquery.com/removeClass/),
