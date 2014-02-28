@@ -27,6 +27,17 @@ ruby app.rb
 open 'http://localhost:4567'
 ```
 
+## Following Along
+
+Each section contains an example and something for you to do on your own to
+reinforce the concept. You should try out each example in the browser and then
+do the reinforcement exercise.
+
+**Open the javascript console in Chrome so that you can follow along with the
+queries listed in the following section. You can open the javascript console
+by navigating the menu bar to `View -> Developer -> Javascript Console` or with
+the shortcut `cmd + option + j`.**
+
 ## Finding Stuff
 
 ### Find an Element by Type
