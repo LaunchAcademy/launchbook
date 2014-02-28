@@ -40,8 +40,6 @@ the shortcut `cmd + option + j`.**
 
 ## Finding Stuff
 
-jQuery
-
 ### Find an Element by Type
 
 jQuery let's us use [CSS selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048),
