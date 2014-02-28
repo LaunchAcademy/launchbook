@@ -1,0 +1,32 @@
+.media {
+  display: block;
+}
+.media-img {
+  float:left;
+  margin-right:12px;
+}
+/**
+* Reversed image location (right instead of left).
+*/
+.media-img-rev {
+  float:right;
+  margin-left: 12px:
+}
+
+.media-img img,
+.media-img-rev img {
+  display:block;
+}
+
+.media-body {
+  overflow:hidden;
+}
+
+.media-body,
+.media-body > :last-child {
+  margin-bottom:0;
+}
+
+.post {
+  margin-bottom: 24px;
+}
