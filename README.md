@@ -40,6 +40,8 @@ the shortcut `cmd + option + j`.**
 
 ## Finding Stuff
 
+jQuery
+
 ### Find an Element by Type
 
 jQuery let's us use [CSS selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048),
@@ -196,6 +198,10 @@ $textarea.attr('placeholder', 'Hello World!');
 **Use `.attr()` to change `src` attribute of one of the ads in the sidebar.**
 
 Here's an image source if you need one: `http://placebear.com/200/300`.
+
+**Protip:** Prefixing variables with `$` is a good way to signify that it's value
+is a jQuery object. This is helpful because it lets us know that we can use
+jQuery's functions on this object.
 
 ### Modifying an Element's Text
 
