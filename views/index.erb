@@ -10,14 +10,14 @@
 
 <div class="posts">
   <% @posts.each do |post| %>
-    <div class="post <%= 'post-liked ' if post[:liked] %>media">
+    <div class="post <%= 'post-liked ' if post.liked %>media">
       <div class="media-img">
-        <img src="<%= post[:user][:avatar_url] %>">
+        <img src="http://placekitten.com/50/50">
       </div>
 
       <div class="media-body">
-        <h4><%= post[:user][:name] %></h4>
-        <p><%= post[:content] %></p>
+        <h4><%= post.author %></h4>
+        <p><%= post.content %></p>
 
         <ul class="inline-list post-actions">
           <li><a href="#">Like</a></li>
@@ -26,19 +26,6 @@
         </ul>
 
         <div class="comments">
-          <% post[:comments].each do |comment| %>
-            <div class="panel">
-              <div class="media">
-                <div class="media-img">
-                  <img src="<%= comment[:user][:avatar_url] %>">
-                </div>
-                <div class="media-body">
-                  <h6><%= comment[:user][:name] %></h6>
-                  <p><%= comment[:content] %></p>
-                </div>
-              </div>
-            </div>
-          <% end %>
         </div>
       </div>
     </div>
