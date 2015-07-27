@@ -12,6 +12,10 @@ You will practice how to:
 
 ```no-highlight
 et get launchbook
+cd launchbook
+bundle
+ruby app.rb
+open localhost:4567
 ```
 
 ## Following Along
