@@ -52,7 +52,7 @@ Example, finding the status update form:
 $('form');
 ```
 
-**Find the top navbar by query for the element type, which is  `<nav>`.**
+**Exercise:** Find the top navbar by query for the element type, which is  `<nav>`.
 
 ### Finding Elements by their ID
 
@@ -64,7 +64,7 @@ Example, finding the left sidebar by it's id:
 $('#sidebar-left');
 ```
 
-**Find the sidebar on the right by using it's id.**
+**Exercise:** Find the sidebar on the right by using it's id.
 
 ### Finding Elements by their Class
 
@@ -76,7 +76,7 @@ Example, finding the "Favorites" section of the sidebar by using it's class:
 $('.favorites');
 ```
 
-**Find the "Pages" and "Groups" sections of the sidebar by using their class.**
+**Exercise:** Find the "Pages" and "Groups" sections of the sidebar by using their class.
 
 ### Finding Child Elements
 
@@ -86,11 +86,11 @@ the same way you would with CSS.
 Example, finding all of the sections of the sidebar:
 
 ```javascript
-$('#sidebar div');
+$('#sidebar-right div');
 
 // Even better, this only selects div elements that are direct children of
 // the sidebar container
-$('#sidebar > div');
+$('#sidebar-right > div');
 ```
 
 ### Querying Multiple Elements
@@ -103,7 +103,7 @@ Example, we can find all of the posts on the page by using the `.post` class:
 $('.post');
 ```
 
-**Find all of the comments on the page.**
+**Exercise:** Find all of the comments on the page.
 
 #### Finding Specific Matching Elements
 
@@ -114,7 +114,7 @@ $('.post:first');
 $('.post').first();
 ```
 
-**Find the first comment on the page.**
+**Exercise:** Find the first comment on the page.
 
 Example, finding the last post in the feed:
 
@@ -123,7 +123,7 @@ $('.post:last');
 $('.post').last();
 ```
 
-**Find the last comment on the page.**
+**Exercise:** Find the last comment on the page.
 
 Example, finding the third post in the feed:
 
@@ -131,10 +131,10 @@ Example, finding the third post in the feed:
 $('.post:nth-child(3)');
 ```
 
-**Find the fourth comment on the page.**
+**Exercise:** Find the fourth comment on the page.
 
 **Protip:** You don't want to use `$('.post')[2]` because this won't return a
-jQuery object. Because the object that is return is not a jQuery object, you
+jQuery object. Because the object that is returned is not a jQuery object, you
 won't be able to use any of jQuery's functions on this object. In order to use
 this technique and return a jQuery object, you would need to wrap the entire
 query with jQuery: `$($('.post')[2]);`.
@@ -152,7 +152,7 @@ Example, hiding the status update form:
 $('.status-update').hide();
 ```
 
-**Find one of the ads in the sidebar and use `.hide()` to hide it.**
+**Exercise:** Find one of the ads in the sidebar and use `.hide()` to hide it.
 
 #### Showing an Element
 
@@ -165,8 +165,8 @@ Example, showing the status update form:
 $('.status-update').show();
 ```
 
-**Use `.show()` to make the ad that you hid in the previous step visible
-again.**
+**Exercise:** Use `.show()` to make the ad that you hid in the previous step visible
+again.
 
 #### Toggling an Element
 
@@ -179,7 +179,7 @@ Example, toggling the status update form:
 $('.status-update').toggle();
 ```
 
-**Use `.toggle()` to toggle the display of the nav bar at the top of the page.**
+**Exercise:** Use `.toggle()` to toggle the display of the nav bar at the top of the page.
 
 ### Modifying an Element's Attributes
 
@@ -193,9 +193,7 @@ var $textarea = $('.status-update textarea');
 $textarea.attr('placeholder', 'Hello World!');
 ```
 
-**Use `.attr()` to change `src` attribute of one of the ads in the sidebar.**
-
-Here's an image source if you need one: `http://placebear.com/200/300`.
+**Exercise:** Use `.attr()` to change `src` attribute of one of the ads in the sidebar. Here's an image source if you need one: `http://placebear.com/200/300`.
 
 **Protip:** Prefixing variables with `$` is a good way to signify that it's value
 is a jQuery object. This is helpful because it lets us know that we can use
@@ -212,7 +210,7 @@ Example, changing the title of our application:
 $('.title-area .name a').text('Launch Academy Facebook Clone');
 ```
 
-**Find Sam's post and change it's text to something incredible.**
+**Exercise:** Find Sam's post and change it's text to something incredible.
 
 ### Modifying an Element's Class
 
@@ -225,12 +223,12 @@ and [.toggleClass()](https://api.jquery.com/toggleClass/).
 Example, adding the `.active` class to the "News Feed" link in the left sidebar:
 
 ```javascript
-var $newsFeedLink = $('.favorites li:nth-child(3)');
+var $newsFeedLink = $('.favorites li:first-child');
 $newsFeedLink.addClass('active');
 ```
 
-**Find the first post and use `.addClass()` to add the `.post-liked` class to
-it.**
+**Exercise:** Find the first post and use `.addClass()` to add the `.post-liked` class to
+it.
 
 #### Removing a Class
 
@@ -238,12 +236,12 @@ Example, removing the `.active` class from the "News Feed" link in the left
 sidebar:
 
 ```javascript
-var $newsFeedLink = $('.favorites li:nth-child(3)');
+var $newsFeedLink = $('.favorites li:first-child');
 $newsFeedLink.removeClass('active');
 ```
 
-**Find the second post and use `.removeClass()` to remove the `.post-liked`
-class.**
+**Exercise:** Find the second post and use `.removeClass()` to remove the `.post-liked`
+class.
 
 #### Toggling a Class
 
@@ -254,7 +252,7 @@ var $sidebarLinks = $('.favorites li');
 $sidebarLinks.toggleClass('active');
 ```
 
-**Find any post and use `.toggleClass()` to toggle the `.post-liked` class.**
+**Exercise:** Find any post and use `.toggleClass()` to toggle the `.post-liked` class.
 
 #### More with Classes
 
